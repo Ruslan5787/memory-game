@@ -36,7 +36,6 @@
 
   box-shadow: rgb(50 50 93 / 25%) 0 50px 100px -20px,
   rgb(0 0 0 / 30%) 0px 30px 60px -30px;
-  user-select: none;
 }
 
 .scene {
@@ -93,6 +92,31 @@
 .game-info {
   text-align: center;
   margin-top: 28px;
+}
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 10;
+
+  &__wrapper {
+    width: 240px;
+    margin: 0 auto;
+    text-align: center;
+    background: #f7fbfc;
+    border-radius: 7px;
+    padding: 15px;
+
+    font-size: 25px;
+  }
 }
 
 .number-attempts {

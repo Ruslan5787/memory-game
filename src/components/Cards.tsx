@@ -47,7 +47,7 @@ export const Cards: FC<CardsProps> = (props) => {
       setTimeout(() => {
         setIndicesTwoClickCards([]);
         setClickBlock(false);
-      }, 800);
+      }, 700);
     }
 
     if (secondMatches && firstMatches.id === secondMatches.id) {

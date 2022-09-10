@@ -1,6 +1,5 @@
 @import "~normalize.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;700&display=swap");
-
 *,
 *::after,
 *::before {
@@ -13,6 +12,7 @@ body {
     font-weight: 400;
     font-size: 23px;
     background-color: #769FCD;
+    user-select: none;
 }
 
 button {

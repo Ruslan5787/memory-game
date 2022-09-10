@@ -5,6 +5,8 @@ import "./styles/style.scss";
 import {ButtonReset} from "./components/ButtonReset";
 import {Cards} from "./components/Cards";
 import {GameInfo} from "./components/GameInfo";
+import {Modal} from "./components/Modal";
+import PICTURES from "./images";
 
 export const App: FC = () => {
   const [attempts, setAttempts] = useState<number>(0);
@@ -18,9 +20,17 @@ export const App: FC = () => {
     }
   }, [isGameReset]);
 
+  const getModal = () => {
+    if (numberOfGuesses === PICTURES.length) {
+      return <Modal/>;
+    }
+  };
+
   return (
     <div className="content">
       <div className="content-wrapper">
+        {getModal()}
+
         <ButtonReset setGameReset={setGameReset}/>
 
         <Cards
